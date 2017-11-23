@@ -30,6 +30,8 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
+canvas.fillColor = Color.black
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 300, height: 300)
 
 // No borders
 canvas.drawShapesWithBorders = false
@@ -38,6 +40,23 @@ canvas.drawShapesWithBorders = false
 canvas.defaultLineWidth = 5
 
 // Add your code below... remember to use comments to indicate your intent
+canvas.fillColor = Color.init(hue: 120, saturation: 80, brightness: 100, alpha: 175)
+canvas.drawEllipse(centreX: 75, centreY: 200, width: 100, height: 100)
+canvas.fillColor = Color.init(hue: 60, saturation: 80, brightness: 100, alpha: 175)
+canvas.drawEllipse(centreX: 125, centreY: 200, width: 100, height: 100)
+canvas.fillColor = Color.init(hue: 350, saturation: 100, brightness: 100, alpha: 175)
+canvas.drawEllipse(centreX: 175, centreY: 200, width: 100, height: 100)
+canvas.fillColor = Color.init(hue: 250, saturation: 100, brightness: 100, alpha: 150)
+canvas.drawEllipse(centreX: 225, centreY: 200, width: 100, height: 100)
+//draw them lines boi
+canvas.lineColor = Color.init(hue: 120, saturation: 80, brightness: 100, alpha: 175)
+canvas.drawLine(fromX: 75, fromY: 148, toX: 75, toY: 50)
+canvas.lineColor = Color.init(hue: 350, saturation: 100, brightness: 100, alpha: 175)
+canvas.drawLine(fromX: 175, fromY: 148, toX: 175, toY: 50)
+canvas.lineColor = Color.init(hue: 250, saturation: 100, brightness: 100, alpha: 150)
+canvas.drawLine(fromX: 225, fromY: 148, toX: 225, toY: 50)
+canvas.lineColor = Color.init(hue: 60, saturation: 80, brightness: 100, alpha: 175)
+canvas.drawLine(fromX: 125, fromY: 148, toX: 125, toY: 50)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
