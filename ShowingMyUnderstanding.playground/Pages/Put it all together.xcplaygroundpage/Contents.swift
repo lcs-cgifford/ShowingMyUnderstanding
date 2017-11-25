@@ -34,6 +34,13 @@ canvas.drawLine(fromX: 250, fromY: 450, toX: 250, toY: 350, lineWidth: 10)
 canvas.drawLine(fromX: 250, fromY: 50, toX: 250, toY: 150, lineWidth: 10)
 canvas.drawShapesWithBorders
 canvas.borderColor = Color.yellow
+let number = random(from: 0, toButNotIncluding: 2)
+if number == 1 {
+    canvas.fillColor = Color.white
+}
+if number == 0 {
+    canvas.fillColor = Color.blue
+}
 canvas.drawEllipse(centreX: 250, centreY: 250, width: 200, height: 200, borderWidth: 10)
 canvas.drawShapesWithBorders
 canvas.borderColor = Color.black
